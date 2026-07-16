@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary -->
+  <title>BlekCode — IT Solutions. Clean Code. Real Impact.</title>
+  <meta name="description" content="BlekCode is a senior software development studio based in Malé, Maldives. We design and engineer web, mobile, and cloud products — including AI integrations — for ambitious teams worldwide." />
+  <meta name="keywords" content="software development Maldives, web development Maldives, mobile app development, software studio Malé, custom software, React Native, Next.js, cloud, DevOps, AI integration, RAG, product design, hire developers Maldives" />
+  <meta name="author" content="BlekCode" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#111111" id="themeColorMeta" />
+  <link rel="canonical" href="https://blekcode.com/" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BlekCode" />
+  <meta property="og:title" content="BlekCode — IT Solutions. Clean Code. Real Impact." />
+  <meta property="og:description" content="A senior software development studio based in Malé, Maldives. Web, mobile, cloud, and AI products built with care for teams worldwide." />
+  <meta property="og:url" content="https://blekcode.com/" />
+  <meta property="og:image" content="https://blekcode.com/og-image.png" />
+  <meta property="og:image:secure_url" content="https://blekcode.com/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="BlekCode — IT Solutions. Clean Code. Real Impact. Malé, Maldives." />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BlekCode — IT Solutions. Clean Code. Real Impact." />
+  <meta name="twitter:description" content="A senior software development studio based in Malé, Maldives. Web, mobile, cloud, and AI products built with care for teams worldwide." />
+  <meta name="twitter:image" content="https://blekcode.com/og-image.png" />
+  <meta name="twitter:image:alt" content="BlekCode — Clean code, real impact." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://blekcode.com/#organization",
+        "name": "BlekCode",
+        "alternateName": "Blek Code",
+        "url": "https://blekcode.com/",
+        "logo": "https://blekcode.com/favicon.svg",
+        "image": "https://blekcode.com/og-image.png",
+        "description": "Software development studio based in Malé, Maldives, building web, mobile, cloud, and AI products for ambitious teams worldwide.",
+        "foundingDate": "2009",
+        "email": "hello@blekcode.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Malé",
+          "addressCountry": "MV"
+        },
+        "areaServed": "Worldwide",
+        "sameAs": [
+          "https://github.com/Blek-Code"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://blekcode.com/#service",
+        "name": "BlekCode",
+        "image": "https://blekcode.com/og-image.png",
+        "url": "https://blekcode.com/",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Malé",
+          "addressCountry": "MV"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 4.1755,
+          "longitude": 73.5093
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Sunday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Software development services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web platforms", "description": "Marketing sites, dashboards, and SaaS products built with Next.js and TypeScript." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile apps", "description": "iOS and Android apps with React Native, Swift, and Kotlin." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom software", "description": "Internal tools, APIs, and bespoke platforms." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud and DevOps", "description": "Reliable, observable infrastructure on AWS, GCP, and Cloudflare." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI integration", "description": "Practical AI features built on Claude, OpenAI, and open-weight models." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Product design", "description": "UX research, UI design, and brand systems." } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://blekcode.com/#website",
+        "url": "https://blekcode.com/",
+        "name": "BlekCode",
+        "description": "IT Solutions. Clean Code. Real Impact.",
+        "publisher": { "@id": "https://blekcode.com/#organization" },
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+  <script>
+    // Set theme before paint to avoid FOUC
+    (function () {
+      try {
+        var saved = localStorage.getItem('blekcode-theme');
+        var theme = (saved === 'light' || saved === 'dark')
+          ? saved
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+        // Initial theme-color for browser chrome
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#ffffff' : '#111111');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" aria-label="BlekCode home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 272 300" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M82.19,216.19l82.87,83.81H40.07c-22.13,0-40.07-17.94-40.07-40.07V40.07C0,17.94,17.94,0,40.07,0h126.76l-85.6,84.66-51.49,50.9-5.52,5.46c-2.39,2.37-3.75,5.61-3.75,8.98s1.36,6.6,3.75,8.96l57.01,56.38c.24.24.46.46.72.64l.24.22Z"/>
+          <path d="M207.98,150.79c-.18,3.07-1.49,6-3.7,8.17l-57.01,56.38c-2.45,2.41-5.65,3.64-8.85,3.64s-6.51-1.25-8.98-3.75c-4.89-4.95-4.84-12.95.11-17.84l47.94-47.39-47.94-47.41c-4.95-4.89-5-12.88-.11-17.83,4.91-4.95,12.88-5,17.84-.09l57.01,56.35c2.21,2.17,3.53,5.11,3.7,8.19,16.32-2.41,30.94-10.06,42.07-21.17,13.56-13.58,21.95-32.32,21.95-53.05C272,35.58,241.59,3.24,202.91.24L51.23,150.22l42.79,42.31,4.93,4.86c.35.35.7.72.99,1.12l100.31,101.42c.22,0,.42-.02.61-.02,19.17-.99,36.46-9.16,49.19-21.87,13.56-13.58,21.95-32.32,21.95-53.05,0-37.69-27.78-68.89-64.02-74.21ZM92.73,175.99c-1.25-.61-2.43-1.47-3.46-2.54-4.84-5-4.71-12.99.31-17.84l30.35-29.38c5-4.84,12.99-4.71,17.84.31,4.84,5,4.69,12.99-.31,17.84l-30.35,29.38c-3.94,3.81-9.73,4.54-14.37,2.23Z"/>
+        </svg>
+      </span>
+      <span class="logo-word">BLEK<span class="logo-accent">CODE</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav__cta">Start a project</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light theme">
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+      </svg>
+    </button>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__orb hero__orb--a"></div>
+      <div class="hero__orb hero__orb--b"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="eyebrow">
+        <span class="dot"></span>
+        <span>IT SOLUTIONS &middot; CLEAN CODE &middot; REAL IMPACT</span>
+      </div>
+      <h1 class="hero__title">
+        We build software<br />
+        as carefully as the ocean<br />
+        carves an island.
+      </h1>
+      <p class="hero__lede">
+        BlekCode is a small, senior team designing and engineering web,
+        mobile, and cloud products for founders and teams who care about craft.
+      </p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary">Start a project →</a>
+        <a href="#work" class="btn btn--ghost">See our work</a>
+      </div>
+      <div class="hero__meta" id="heroMeta">
+        <div><strong data-count="40" data-suffix="+">0</strong><span>shipped products</span></div>
+        <div><strong data-count="12">0</strong><span>countries served</span></div>
+        <div><strong data-count="9">0</strong><span>engineers &amp; designers</span></div>
+        <div><strong data-count="6" data-suffix="yr">0</strong><span>average tenure</span></div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <section class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>TypeScript</span><span>◆</span>
+      <span>Next.js</span><span>◆</span>
+      <span>React Native</span><span>◆</span>
+      <span>Node</span><span>◆</span>
+      <span>Go</span><span>◆</span>
+      <span>Postgres</span><span>◆</span>
+      <span>AWS</span><span>◆</span>
+      <span>GCP</span><span>◆</span>
+      <span>Cloudflare</span><span>◆</span>
+      <span>Swift</span><span>◆</span>
+      <span>Kotlin</span><span>◆</span>
+      <span>Rust</span><span>◆</span>
+      <span>Python</span><span>◆</span>
+      <span>Anthropic</span><span>◆</span>
+      <!-- dup for seamless loop -->
+      <span>TypeScript</span><span>◆</span>
+      <span>Next.js</span><span>◆</span>
+      <span>React Native</span><span>◆</span>
+      <span>Node</span><span>◆</span>
+      <span>Go</span><span>◆</span>
+      <span>Postgres</span><span>◆</span>
+      <span>AWS</span><span>◆</span>
+      <span>GCP</span><span>◆</span>
+      <span>Cloudflare</span><span>◆</span>
+      <span>Swift</span><span>◆</span>
+      <span>Kotlin</span><span>◆</span>
+      <span>Rust</span><span>◆</span>
+      <span>Python</span><span>◆</span>
+      <span>Anthropic</span><span>◆</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section__head">
+        <span class="section__num">01 / Services</span>
+        <h2 class="section__title">What we build, end to end.</h2>
+        <p class="section__sub">
+          From a napkin sketch to a production system serving thousands.
+          We work as a fractional product team or a dedicated squad.
+        </p>
+      </header>
+
+      <div class="services">
+        <article class="service">
+          <span class="service__icon">◇</span>
+          <h3>Web platforms</h3>
+          <p>Marketing sites, dashboards, and SaaS products built with Next.js, TypeScript, and modern infra.</p>
+          <ul>
+            <li>Next.js / Remix</li>
+            <li>Design systems</li>
+            <li>Edge &amp; serverless</li>
+          </ul>
+        </article>
+        <article class="service">
+          <span class="service__icon">◈</span>
+          <h3>Mobile apps</h3>
+          <p>iOS and Android apps that feel native, ship fast, and scale with your user base.</p>
+          <ul>
+            <li>React Native</li>
+            <li>Swift / Kotlin</li>
+            <li>App Store / Play release</li>
+          </ul>
+        </article>
+        <article class="service">
+          <span class="service__icon">◆</span>
+          <h3>Custom software</h3>
+          <p>Internal tools, APIs, and bespoke platforms tailored to how your business actually runs.</p>
+          <ul>
+            <li>Node / Go / Python</li>
+            <li>Postgres / Redis</li>
+            <li>Event-driven systems</li>
+          </ul>
+        </article>
+        <article class="service">
+          <span class="service__icon">◉</span>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>Infra that's boring in the best way — observable, automated, and quietly reliable.</p>
+          <ul>
+            <li>AWS / GCP / Cloudflare</li>
+            <li>CI/CD &amp; IaC</li>
+            <li>Monitoring &amp; SRE</li>
+          </ul>
+        </article>
+        <article class="service">
+          <span class="service__icon">◎</span>
+          <h3>AI integration</h3>
+          <p>Practical AI features built on Claude, OpenAI, and open-weight models — shipped, not demoed.</p>
+          <ul>
+            <li>RAG &amp; agents</li>
+            <li>Prompt engineering</li>
+            <li>Eval pipelines</li>
+          </ul>
+        </article>
+        <article class="service">
+          <span class="service__icon">◐</span>
+          <h3>Product design</h3>
+          <p>Interfaces that earn trust on the first scroll and stay out of the way after.</p>
+          <ul>
+            <li>UX research</li>
+            <li>UI &amp; brand systems</li>
+            <li>Prototyping</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <header class="section__head">
+        <span class="section__num">02 / Process</span>
+        <h2 class="section__title">How a project moves through the farm.</h2>
+        <p class="section__sub">
+          Five phases. No theatre. Every week ends with something you can click.
+        </p>
+      </header>
+
+      <ol class="process">
+        <li class="process__step">
+          <span class="process__index">01</span>
+          <h3>Discover</h3>
+          <p>Workshops, interviews, and a written scope you can actually understand.</p>
+        </li>
+        <li class="process__step">
+          <span class="process__index">02</span>
+          <h3>Design</h3>
+          <p>Wireframes to high-fidelity. We test on real users, not opinions.</p>
+        </li>
+        <li class="process__step">
+          <span class="process__index">03</span>
+          <h3>Build</h3>
+          <p>Two-week sprints. Demos every Friday. Code reviews every commit.</p>
+        </li>
+        <li class="process__step">
+          <span class="process__index">04</span>
+          <h3>Launch</h3>
+          <p>Phased rollout, observability dialed in, on-call from day one.</p>
+        </li>
+        <li class="process__step">
+          <span class="process__index">05</span>
+          <h3>Support</h3>
+          <p>Retainers, SLAs, and a team that remembers your codebase next year.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="container">
+      <header class="section__head">
+        <span class="section__num">03 / Work</span>
+        <h2 class="section__title">Featured project.</h2>
+        <p class="section__sub">A platform built for the Ministry of Economic Development &amp; Trade, Maldives.</p>
+      </header>
+
+      <div class="work-grid work-grid--featured">
+        <article class="work">
+          <div class="work__cover work__cover--1" aria-hidden="true">
+            <span class="work__glyph">◇</span>
+          </div>
+          <div class="work__meta">
+            <span class="work__tag">Government &middot; Web platform</span>
+            <h3>Agumagu</h3>
+            <p>A digital platform engineered for the Maldives Ministry of Economic Development &amp; Trade — designed for clarity, performance, and trust.</p>
+            <a class="work__link" href="https://agumagu.trade.gov.mv/" target="_blank" rel="noopener">
+              Visit agumagu.trade.gov.mv <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about__copy">
+        <span class="section__num">04 / About</span>
+        <h2 class="section__title">A farm, not a factory.</h2>
+        <p>
+          We're a small team of engineers, designers, and product thinkers
+          working out of Malé. We chose &ldquo;farm&rdquo; deliberately &mdash;
+          it's a place where things grow with attention, season after season.
+        </p>
+        <p>
+          Our timezone (GMT+5) gives European mornings and Asian afternoons
+          a real overlap, and our pace lets us focus on one or two clients
+          at a time, deeply, instead of juggling a dozen at arm's length.
+        </p>
+        <a href="#contact" class="btn btn--primary">Let's talk →</a>
+      </div>
+      <aside class="about__facts">
+        <div class="fact">
+          <span class="fact__k">Based in</span>
+          <span class="fact__v">Malé, Maldives</span>
+        </div>
+        <div class="fact">
+          <span class="fact__k">Time zone</span>
+          <span class="fact__v">GMT+5 &middot; MVT</span>
+        </div>
+        <div class="fact">
+          <span class="fact__k">Founded</span>
+          <span class="fact__v">2009</span>
+        </div>
+        <div class="fact">
+          <span class="fact__k">Team</span>
+          <span class="fact__v">9 senior makers</span>
+        </div>
+        <div class="fact">
+          <span class="fact__k">Engagements</span>
+          <span class="fact__v">Fixed scope &middot; Retainer &middot; Squad</span>
+        </div>
+        <div class="fact">
+          <span class="fact__k">Languages</span>
+          <span class="fact__v">English &middot; Dhivehi</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container contact">
+      <header class="section__head section__head--center">
+        <span class="section__num">05 / Contact</span>
+        <h2 class="section__title">Have an idea worth building?</h2>
+        <p class="section__sub">
+          Tell us what you're working on. We reply within one business day.
+        </p>
+      </header>
+
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required placeholder="Jane Founder" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="jane@company.com" />
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Optional" />
+        </div>
+        <div class="field field--full">
+          <label for="message">About the project</label>
+          <textarea id="message" name="message" rows="5" required placeholder="A few sentences on what you're building, who it's for, and roughly when you'd like to start."></textarea>
+        </div>
+        <div class="field field--full contact__submit">
+          <button type="submit" class="btn btn--primary">Send message →</button>
+          <span class="contact__note">or email <a href="mailto:hello@blekcode.com">hello@blekcode.com</a></span>
+        </div>
+        <div class="contact__sent" id="contactSent" hidden>
+          ✓ Thanks — your message is on its way. We'll get back to you shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="footer__brand-lockup" aria-label="BlekCode home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 272 300" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M82.19,216.19l82.87,83.81H40.07c-22.13,0-40.07-17.94-40.07-40.07V40.07C0,17.94,17.94,0,40.07,0h126.76l-85.6,84.66-51.49,50.9-5.52,5.46c-2.39,2.37-3.75,5.61-3.75,8.98s1.36,6.6,3.75,8.96l57.01,56.38c.24.24.46.46.72.64l.24.22Z"/>
+              <path d="M207.98,150.79c-.18,3.07-1.49,6-3.7,8.17l-57.01,56.38c-2.45,2.41-5.65,3.64-8.85,3.64s-6.51-1.25-8.98-3.75c-4.89-4.95-4.84-12.95.11-17.84l47.94-47.39-47.94-47.41c-4.95-4.89-5-12.88-.11-17.83,4.91-4.95,12.88-5,17.84-.09l57.01,56.35c2.21,2.17,3.53,5.11,3.7,8.19,16.32-2.41,30.94-10.06,42.07-21.17,13.56-13.58,21.95-32.32,21.95-53.05C272,35.58,241.59,3.24,202.91.24L51.23,150.22l42.79,42.31,4.93,4.86c.35.35.7.72.99,1.12l100.31,101.42c.22,0,.42-.02.61-.02,19.17-.99,36.46-9.16,49.19-21.87,13.56-13.58,21.95-32.32,21.95-53.05,0-37.69-27.78-68.89-64.02-74.21ZM92.73,175.99c-1.25-.61-2.43-1.47-3.46-2.54-4.84-5-4.71-12.99.31-17.84l30.35-29.38c5-4.84,12.99-4.71,17.84.31,4.84,5,4.69,12.99-.31,17.84l-30.35,29.38c-3.94,3.81-9.73,4.54-14.37,2.23Z"/>
+            </svg>
+          </span>
+          <span class="logo-word">BLEK<span class="logo-accent">CODE</span></span>
+        </a>
+        <p>IT Solutions. Clean Code. Real Impact.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Studio</h4>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hello@blekcode.com">hello@blekcode.com</a>
+          <span>Malé, Maldives</span>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Dribbble</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <span>© <span id="year"></span> BlekCode Pvt Ltd. All rights reserved.</span>
+      <span>Made in Malé · 4°10′N 73°30′E</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
